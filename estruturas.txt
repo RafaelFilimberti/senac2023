@@ -1,0 +1,15 @@
+
+
+função sem parametro = não precisa passar valor na hora de chamar
+
+for -
+
+I < 10 - vai executar enquanto i for menor que 10
+
+I = I + 1 = I++
+
+while - 
+
+=== identicos, mesma variavel e nome
+!== não são identicos
+

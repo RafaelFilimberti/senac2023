@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./projeto/js/script.js"></script>
+</head>
+
+<body>
+
+   
+
+    <script>
+
+/* //exercicio 01
+        var numero = prompt("Digite uma número: ");
+
+        function mostrarNumero(valor) {
+            if (valor > 0) {
+                alert("O número é positivo");
+            }
+            else if (valor < 0) {
+                alert("Número é negativo");
+            }
+            else {
+                alert("número é igual a zero")
+            }
+        }
+
+        mostrarNumero(numero); */
+
+         //exercicio 02
+
+       /*  var numero = prompt("Digite uma número para tabuada: ");
+        
+        function tabuada(valor) {
+        
+            for (let index = 0; index <= 10; index++) {
+               resultado = numero * index;
+            console.log(numero + " x "+ index +" = " + resultado);  
+            }  
+            
+        }
+
+            tabuada(numero);  */
+
+        
+            //exercicio 03
+/* 
+             var numero = prompt("Digite uma número: ");
+
+            function fatorial (valor) {
+               
+                for (let i = valor - 1 ; i >= 1; i--){
+                    valor = valor * i;
+                    //aqui o valor não muda na primeira iteração 4*3 = 12
+                }
+                return valor;
+            }
+         
+console.log(fatorial(numero)); */
+
+
+ // exercicio 4
+
+/* var operacao = prompt("escolha uma operação: ");
+
+
+function operation() {
+
+    var n1 = prompt("informe um número: ");
+    n1 = parseInt(n1);
+    var n2 = prompt("informe mais um número: ");
+    n2 = parseInt(n2);
+    
+    switch (operacao) {
+        
+                   case "+":
+                   let soma = n1 + n2;
+                       alert("O resultado da soma é: " + soma);
+                       
+                       break;
+                   case "-":
+                   let subtracao = n1 - n2;
+                   alert("O resultado da subtração é: " + subtracao);
+                       break;
+                   case "/":
+                   let divisao = n1 / n2;
+                   alert("O resultado da divisão é: " + divisao);
+                       break;
+                       case "*":
+                       let multiplicacao = n1 * n2;
+                   alert("O resultado da multiplicação é: " + multiplicacao);
+                       break;
+
+                   default:
+                       alert("operador inválido");
+                       break;
+               }
+
+}
+
+operation(operacao);  */
+
+//exercicio 05
+/* 
+let valores = [15, 7];
+
+valores.sort(function(a,b) {
+    return a - b;    
+});
+
+console.log(valores);
+     */
+
+     //exercicio 06
+
+   /*   var variavel1 = prompt("Informe um valor: ");
+     variavel1 = parseInt(variavel1);
+     var variavel2 = prompt("Informe outro valor: ");
+     variavel2 = parseInt(variavel2);
+
+     function compara(a,b){
+        if (a  > b  ){
+            alert(variavel1 + " é maior que " + variavel2)
+        }
+            else if (a < b){
+                alert(variavel1 + " é menor que " + variavel2)
+            }
+            else
+            alert("Valores inválidos ou iguais")
+        }
+
+        compara(variavel1,variavel2); */
+
+        //exercicio 07
+
+       /*  var nota1 = prompt("Informe o resultado da prova 01: ");
+        nota1 = parseFloat(nota1);
+        var nota2 = prompt("Informe o resultado da prova 02: ");
+        nota2 = parseFloat(nota2);
+        var nota3 = prompt("Informe o resultado da prova 03: ");
+        nota3 = parseFloat(nota3);
+
+        let notas = [nota1, nota2, nota3];
+
+        function calcularMedia(a,b,c){
+           let  media = ((a+b+c) / 3).toFixed(2);
+            if( media >= 6){
+                alert("A média do aluno foi: " + media + " , Aluno aprovado")
+            }
+            else
+            alert("A média do aluno foi: " + media + " , Aluno reprovado")
+        }
+
+        calcularMedia(nota1, nota2, nota3);
+ */
+     
+/* //exercicio 08
+
+var nome = prompt("Qual o seu nome? ");
+var nascimento = prompt("Qual a sua data de nascimento? ");
+
+function calcularIdade(timestamp){
+    //Acessar a data de hoje, sendo ano/mês/dia criando um objeto chamado na variável today
+    const today = new Date()
+
+    //Criamos um objeto de data o qual declaramos o Timestamp
+    const birthDate = new Date(timestamp)
+
+    //A variável "age" calcula o ano buscando o dia de hoje - a data de nascimento inserida
+    let age = today.getFullYear() - birthDate.getFullYear(birthDate)
+    //O método getFullYear() retorna o ano da data especificada de acordo com a hora local.
+    //Ao aplicar a lógica acima, não consideramos que a depender do dia e do mês a idade pode variar neste ano
+    //caso o dia/mes sejam negativos, a idade não será 33 mas 32
+
+    //aplicamos a mesma logica utilizada no age, para o cálculo do mês
+    const month = today.getMonth() - birthDate.getMonth(birthDate)
+
+    //caso o resultado do mês seja < 0 ou == 0, será deduzido um ano (32 anos), isto também vale para o dia evidentemente
+    
+    //aplicamos uma lógica condicional a qual se o mês é menor que zero ou igual a 0 e o dia de hoje é inferior ao dia de nascimento, o ano é subtraído
+    if (month < 0 || month == 0 && today.getDate() < birthDate.getDate()) {
+        age = age - 1;
+    }
+      return age
+    
+    }
+
+    console.log(calcularIdade(nascimento)) */
+
+    var numero = prompt("Informe um número entre 1 e 12: ");
+        
+        function informarMes(valor) {
+        
+            switch (valor) {
+        
+        case "1":
+        alert("O mês referente ao número é Janeiro");
+            
+            break;
+        case "2":
+           alert("O mês referente ao número é Fevereiro");
+           break;
+
+           case "3":
+        alert("O mês referente ao número é Março");
+            break;
+
+        case "4":
+           alert("O mês referente ao número é Abril");
+           break;
+
+           case "5":
+           alert("O mês referente ao número é maio");
+           break;
+
+           case "6":
+           alert("O mês referente ao número é Junho");
+           break;
+
+           case "7":
+           alert("O mês referente ao número é Julho");
+           break;
+
+           case "8":
+           alert("O mês referente ao número é Agosto");
+           break;
+
+           case "9":
+           alert("O mês referente ao número é Setembro");
+           break;
+
+           case "10":
+           alert("O mês referente ao número é Outubro");
+
+           case "11":
+           alert("O mês referente ao número é Novembro");
+           break;
+
+           case "12":
+           alert("O mês referente ao número é Dezembro");
+           break;
+
+        default:
+            alert("intervalo inválido");
+            break;
+    }
+            
+        }
+        
+        informarMes(numero)
+
+    </script>
+
+
+</body>
+
+</html>
